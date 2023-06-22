@@ -33,18 +33,23 @@ while True:
     # send GET request to ACNH API to obtain the desired villager json
     villager = requests.get("http://acnhapi.com/v1/villagers/" + str(villager_num))
 
+    # convert response to usable json dictionary
     villager = villager.json()
 
+    # upload villager dictionary into a dataframe
     villager_df = pd.DataFrame.from_dict(villager)
 
+    # create database engine based on villager database
     engine = db.create_engine('sqlite:///villager.db')
 
+    # convert dataframe to sql database using engine
     villager_df.to_sql('villager_table', con=engine, if_exists='replace', index=False)
 
     # print message containing the input number and name of found villager, followed by database
     print(f'\nVillager {villager_num}: {villager["name"]["name-USen"]}.\n')
     print("Their database is as follows:\n")
 
+    # print villager database
     with engine.connect() as connection:
       query_result = connection.execute(db.text("SELECT * FROM villager_table;")).fetchall()
       print(pd.DataFrame(query_result))

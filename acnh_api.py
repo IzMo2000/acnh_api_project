@@ -1,12 +1,12 @@
 
-################################################################################
+
 # Animal Crossing Villager Name Lookup by ID
 # written by Izaac Molina
 # last updated 6/21/23
 # this program allows villager databases from Animal Crossing: New Horizons to
 # be searched from an ID number.
 # uses ACNH API (v1)
-################################################################################
+
 
 # import necessary libraries
 import requests

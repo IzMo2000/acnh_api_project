@@ -16,3 +16,6 @@ Animal Crossing: New Horizons using [ACNH API](http://acnhapi.com/).
 It will prompt the user for a villager number to be entered, then display the villager's 
 name along with their database. The program may be reprompted for further inputs 
 
+# Badges
+![PEP 8 style check](https://github.com/IzMo2000/acnh_api_project/blob/master/.github/workflows/style.yaml)
+

@@ -24,7 +24,7 @@ print('=================================================')
 # loop input until user wishes to exit
 while True:
 
-    # prompt user to input villager ID
+    # prompt user to input villager ID number
     villager_num = int(input("\nEnter the villager number you would like to" +
                         "see the database for (1-391): "))
 

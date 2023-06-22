@@ -17,5 +17,5 @@ It will prompt the user for a villager number to be entered, then display the vi
 name along with their database. The program may be reprompted for further inputs 
 
 # Badges
-![PEP 8 style check](https://github.com/IzMo2000/acnh_api_project/blob/master/.github/workflows/style.yaml)
+![PEP 8 style check](https://github.com/IzMo2000/acnh_api_project/actions/workflows/style.yaml/badge.svg)
 
